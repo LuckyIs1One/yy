@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox</title>
+    <style>
+        .wrapper{
+            display: flex;
+            
+        }
+        .menu{
+            width: 200px;
+            height: 50vh;
+            margin: auto;
+            margin-top: 200px;
+            
+        }
+        .main {
+            
+            width: 600px;
+            margin: auto;
+            background-color: gainsboro;
+        }
+        .title {
+            border-bottom: 2px solid blue;
+            width: 250px;
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            color: blue;
+            font-weight: bolder;
+        }
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            border-radius: 50%;
+            background-image: url(gomer.jpg);
+            background-position: center;
+            background-size: cover;
+            
+        }
+        .block {
+            display: flex;
+        }
+        .left {
+            display: flex;
+            width: 300px;
+            justify-content: center;
+            align-items: center;
+        }
+        .right{
+            width: 300px;
+        }
+        .list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .list-item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .param {
+            margin-right: 20px;
+            font-weight: bolder;
+        }
+        .res{
+            
+        }
+        .list__item{
+            width: 300px;
+            height: 80px;
+            border: 1px  solid black;
+            border-radius: 10px;
+        }
+        .s{
+            background-color: skyblue;
+            font-size: 20px;
+            padding-top: 5px;
+            text-align: center;
+            color: white;
+            
+           
+        }
+    </style>
+</head>
+<body>
+     <div class="wrapper">
+        <div class="menu">
+         <ul  class="list">
+             <li class="list__item s"  ></li>
+             <li class="list__item  as"></li>
+             <li class="list__item  as"></li>
+             
+         </ul>
+     </div>
+      <div class="main">
+          <div class="title">Основная информация</div>
+          <div class="block">
+              <div class="left">
+                  <div class="avatar"></div>
+              </div>
+              <div class="right">
+                  <ul class="list">
+                      <li class="list-item">
+                          <div class="param">Меня зовут:</div>
+                          <div class="res">Гомер</div>
+                      </li>
+                      <li class="list-item">
+                          <div class="param">Мой возраст:</div>
+                          <div class="res">45 лет</div>
+                      </li>
+                      <li class="list-item">
+                        <div class="param">Мой город:</div>
+                          <div class="res">Москва</div>  
+                      </li>
+                      <li class="list-item">
+                          <div class="param">Моя  специализация:</div>
+                          <div class="res">Web</div>
+                      </li>
+                      <li class="list-item">
+                          <div class="param">Мой город:</div>
+                          <div class="res">Москва</div> 
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+   </div>
+</body>
+</html>
